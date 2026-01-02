@@ -1,0 +1,23 @@
+Artefact_ID,Artefact_Type,Phase,Category,What_It_Demonstrates,Evidential_Notes
+1,Deleted instructional document,Reconnaissance,Preparation,Research into encryption and data concealment techniques prior to data extraction,Recovered from deleted space; supports preparatory intent but does not confirm execution
+2,Web research artefact,Reconnaissance,Preparation,Interest in anonymisation services and financial obfuscation concepts,Indicates research activity; content alone does not prove subsequent misuse
+3,Encrypted container file,Record,Data Exfiltration,Secure storage of extracted sensitive data using encryption,Encryption prevents direct content review; indicates intent to protect data
+4,File system metadata,Record,Data Handling,Creation and modification of files associated with data aggregation,Metadata supports staging activity but not data origin
+5,Archive file,Record,Data Exfiltration,Compression and aggregation of multiple files prior to storage or transfer,Supports preparation for exfiltration; contents partially inaccessible
+6,Encoded text file,Aftermath,Credential Concealment,Deliberate hiding of access credentials using encoding techniques,Decoded via forensic tooling; supports concealment but not user identity
+7,Steganographic image,Aftermath,Anti-Forensics,Hidden data embedded within image media,Recovered through forensic analysis; indicates deliberate obfuscation
+8,Image metadata artefact,Aftermath,Anti-Forensics,Manipulation of file headers and extensions to mask true content,Supports concealment techniques; requires corroboration
+9,Deleted file remnants,Aftermath,Anti-Forensics,Attempted removal of artefacts following data handling activity,Recovered from unallocated space; deletion timing approximate
+10,Registry MRU entry,Aftermath,User Interaction,User interaction with files relevant to the incident,Confirms access activity; cannot distinguish between shared users
+11,LNK shortcut file,Aftermath,User Interaction,Execution or opening of key files linked to the investigation,Supports file access; shortcut creation time may differ from execution
+12,Shellbag registry artefact,Aftermath,User Interaction,Navigation to directories associated with sensitive files,Supports directory access; not proof of file manipulation
+13,Thumbcache artefact,Aftermath,User Interaction,Preview generation of files linked to the investigation,Supports file visibility; does not prove content access
+14,Application execution artefact,Record,Execution Activity,Use of tools consistent with encryption or data handling behaviour,Supports tool usage; does not confirm purpose
+15,Log file artefact,Record,Execution Activity,Timestamped activity aligning with data handling events,Log completeness dependent on system configuration
+16,Hidden attribute file,Aftermath,Anti-Forensics,Use of OS-level hiding techniques to obscure artefacts,Supports concealment intent; files remain recoverable
+17,Temporary file remnants,Record,Data Handling,Intermediate file creation during processing of sensitive data,Supports active data manipulation; limited contextual detail
+18,Credential fragment artefact,Aftermath,Credential Handling,Partial reconstruction of multi-part access credentials,Supports access capability; full credential not published
+19,Configuration artefact,Reconnaissance,Preparation,System configuration adjusted to support subsequent activity,Change timing supports preparation phase
+20,Timeline correlation artefact,Aftermath,Correlation,Alignment of multiple artefacts into a coherent incident timeline,Supports sequencing; dependent on system clock accuracy
+21,Partial wipe indicator,Aftermath,Anti-Forensics,Indications of attempted clean-up or trace removal activity,Supports anti-forensic intent; effectiveness limited
+22,Shared account usage artefact,Aftermath,Attribution Limitation,Activity performed under shared credentials,Prevents definitive attribution to a single individual
